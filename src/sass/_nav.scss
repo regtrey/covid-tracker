@@ -1,0 +1,81 @@
+.nav {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__search {
+    flex: 0 0 40%;
+  }
+
+  &__link-2 {
+    text-decoration: none;
+    color: #d6b5ac;
+
+    &:hover {
+      color: #b98a7e;
+      border-bottom: 3px solid #b98a7e;
+    }
+  }
+
+  &__link-3 {
+    text-decoration: none;
+    color: #d6b5ac;
+
+    &:hover {
+      color: #b98a7e;
+      border-bottom: 3px solid #b98a7e;
+    }
+  }
+
+  &__link-4 {
+    text-decoration: none;
+    color: #d6b5ac;
+
+    &:hover {
+      color: #b98a7e;
+      border-bottom: 3px solid #b98a7e;
+    }
+  }
+}
+
+#home {
+  text-decoration: none;
+  color: #b98a7e;
+  border-bottom: 3px solid #b98a7e;
+
+  &:hover {
+    color: #b98a7e;
+    border-bottom: 3px solid #b98a7e;
+  }
+}
+
+.search__input {
+  height: 2.5rem;
+  color: #d6b5ac;
+  background-color: #f1eceb;
+  border-style: none;
+  border-radius: 10px;
+
+  padding-left: 10px;
+  transition: all 0.35s ease-in-out;
+
+  &::placeholder {
+    color: #d6b5ac;
+  }
+
+  &:focus {
+    outline-style: none;
+    transform: translateY(-6px);
+  }
+}
+
+// background color - #6B0E0E
+// boxes color - #F1ECEB
+// search input background color - #F1ECEB
+// country name and numbers color - #C69488
+// label color - #AE938E
+// search placeholder and unselected nav links color - #D6B5AC
+// selected nav link color and bar below it - #B98A7E
