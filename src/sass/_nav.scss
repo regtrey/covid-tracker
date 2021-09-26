@@ -12,58 +12,67 @@
 
   &__link-2 {
     text-decoration: none;
-    color: #d6b5ac;
+    color: #a194db;
 
     &:hover {
-      color: #b98a7e;
-      border-bottom: 3px solid #b98a7e;
+      color: #ffffff;
+      border-bottom: 3px solid #ffffff;
     }
   }
 
   &__link-3 {
     text-decoration: none;
-    color: #d6b5ac;
+    color: #a194db;
 
     &:hover {
-      color: #b98a7e;
-      border-bottom: 3px solid #b98a7e;
+      color: #ffffff;
+      border-bottom: 3px solid #ffffff;
     }
   }
 
   &__link-4 {
     text-decoration: none;
-    color: #d6b5ac;
+    color: #a194db;
 
     &:hover {
-      color: #b98a7e;
-      border-bottom: 3px solid #b98a7e;
+      color: #ffffff;
+      border-bottom: 3px solid #ffffff;
     }
   }
 }
 
 #home {
   text-decoration: none;
-  color: #b98a7e;
-  border-bottom: 3px solid #b98a7e;
+  color: #a194db;
 
   &:hover {
-    color: #b98a7e;
-    border-bottom: 3px solid #b98a7e;
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
   }
 }
 
 .search__input {
   height: 2.5rem;
-  color: #d6b5ac;
-  background-color: #f1eceb;
-  border-style: none;
+  color: #dfdbdb;
+  background-color: transparent;
+  border: 1px solid #dfdbdb;
+  // border-style: none;
   border-radius: 10px;
 
   padding-left: 10px;
   transition: all 0.35s ease-in-out;
 
+  @media only screen and (max-width: 600px) {
+    height: 2.25rem;
+    font-size: 1.25rem;
+  }
+
   &::placeholder {
-    color: #d6b5ac;
+    color: #dfdbdb;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.25rem;
+    }
   }
 
   &:focus {

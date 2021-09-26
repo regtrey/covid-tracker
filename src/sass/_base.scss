@@ -6,6 +6,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -13,21 +17,33 @@ body {
   height: 100vh;
   font-weight: 400;
   line-height: 1.6;
-  background-color: #a07f79;
+  background-color: #24175e;
+
+  @media only screen and (max-width: 600px) {
+    max-width: 600px;
+    max-height: 80vh;
+  }
 }
 
 .container {
   border-radius: 1rem;
-  background-color: #fcf6f5;
-  height: 700px;
+  background-color: #38297c;
+  height: 768px;
   width: 1200px;
-  margin: 30px auto;
+  margin: 25px auto;
 
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-gap: 8px;
   position: relative;
+
+  @media only screen and (max-width: 600px) {
+    min-height: 60vh;
+    min-width: 400px;
+    margin: 0px auto;
+    border-radius: 0px;
+  }
 }
 
 @keyframes contentIn {
@@ -41,18 +57,21 @@ body {
 }
 
 .content {
-  color: #ae938e;
+  color: #00ffd8;
   padding: 16px;
   border-radius: 12px;
   font-size: 20px;
   font-weight: 300;
   animation: contentIn 0.5s linear;
 
-  background-color: #f1eceb;
+  background-color: #69e5d2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @media only screen and (max-width: 600px) {
+    font-size: 1.75rem;
+  }
 
   &:hover {
-    background-color: #c69488;
+    background-color: #1a0b5e;
     color: #fcf6f5;
 
     span {
@@ -83,6 +102,11 @@ body {
     margin-right: 10px;
 
     z-index: 4;
+
+    @media only screen and (max-width: 600px) {
+      grid-row: 2 / 4;
+      margin-top: 10px;
+    }
   }
 
   &__item-2 {
@@ -90,6 +114,10 @@ body {
     grid-row: 5 / 7;
 
     z-index: 4;
+
+    @media only screen and (max-width: 600px) {
+      grid-row: 4 / 6;
+    }
   }
 
   &__item-3 {
@@ -98,6 +126,10 @@ body {
     margin-right: 10px;
 
     z-index: 4;
+
+    @media only screen and (max-width: 600px) {
+      grid-row: 4 / 6;
+    }
   }
 
   &__item-4 {
@@ -106,6 +138,11 @@ body {
     margin-bottom: 10px;
 
     z-index: 4;
+
+    @media only screen and (max-width: 600px) {
+      grid-row: 6 / 8;
+      margin-bottom: 0px;
+    }
   }
 
   &__item-5 {
@@ -115,6 +152,11 @@ body {
     margin-bottom: 10px;
 
     z-index: 4;
+
+    @media only screen and (max-width: 600px) {
+      grid-row: 6 / 8;
+      margin-bottom: 0px;
+    }
   }
 
   &__item-6 {
@@ -122,23 +164,35 @@ body {
     grid-row: 6 / 9;
     margin-left: 10px;
     margin-bottom: 10px;
-
     z-index: 4;
+
+    @media only screen and (max-width: 600px) {
+      grid-row: 6 / 8;
+      margin-bottom: 0px;
+    }
   }
 
   &__item-7 {
     grid-column: 3 / 5;
     grid-row: 6 / 9;
     margin-bottom: 10px;
-
     z-index: 4;
+
+    @media only screen and (max-width: 600px) {
+      grid-row: 6 / 8;
+      margin-bottom: 0px;
+    }
   }
 
   span {
     font-weight: 700;
     font-size: 3.5rem;
-    color: #c69488;
+    color: #ffffff;
     display: block;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -158,6 +212,10 @@ body {
 
 #total {
   font-size: 5.5rem;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 4.5rem;
+  }
 }
 
 .message {
@@ -173,6 +231,16 @@ body {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2rem;
+    position: absolute;
+    top: 350px;
+    left: 162.5px;
+    right: 162.5px;
+    animation: none;
+    border: none;
+  }
 }
 
 .error {
@@ -222,10 +290,15 @@ body {
     width: 115px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+
+    @media only screen and (max-width: 600px) {
+      height: 75px;
+      width: 100px;
+    }
   }
 
   &__name {
-    color: #c69488;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 5rem;
