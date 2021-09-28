@@ -10,6 +10,10 @@ html {
   @media only screen and (max-width: 600px) {
     font-size: 50%;
   }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -19,8 +23,23 @@ body {
   line-height: 1.6;
   background-color: #24175e;
 
+  @media only screen and (max-width: 1000px) {
+    max-width: 1000px;
+    max-height: 80vh;
+  }
+
+  @media only screen and (max-width: 800px) {
+    max-width: 800px;
+    max-height: 80vh;
+  }
+
   @media only screen and (max-width: 600px) {
     max-width: 600px;
+    max-height: 80vh;
+  }
+
+  @media only screen and (max-width: 400px) {
+    max-width: 400px;
     max-height: 80vh;
   }
 }
@@ -38,11 +57,48 @@ body {
   grid-gap: 8px;
   position: relative;
 
-  @media only screen and (max-width: 600px) {
-    min-height: 60vh;
-    min-width: 400px;
+  @media only screen and (max-width: 1000px) {
+    width: 1000px;
     margin: 0px auto;
     border-radius: 0px;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 6px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 800px;
+    margin: 0px auto;
+    border-radius: 0px;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 6px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 600px;
+    margin: 0px auto;
+    border-radius: 0px;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 6px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    width: 400px;
+    margin: 0px auto;
+    border-radius: 0px;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 4px;
   }
 }
 
@@ -64,10 +120,23 @@ body {
   font-weight: 300;
   animation: contentIn 0.5s linear;
 
-  background-color: #69e5d2;
+  background-color: #46d1bc;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 1.75rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1.75rem;
+  }
+
   @media only screen and (max-width: 600px) {
     font-size: 1.75rem;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 1.25rem;
   }
 
   &:hover {
@@ -94,6 +163,34 @@ body {
     grid-gap: 10px;
 
     z-index: 4;
+
+    @media only screen and (max-width: 800px) {
+      grid-column: 1 / 5;
+      grid-row: 2 / 5;
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-column: 1 / 5;
+      grid-row: 2 / 5;
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-column: 1 / 9;
+      grid-row: 2 / 4;
+      margin-top: 10px;
+      margin-left: 0px;
+
+      // &not:first-child,
+      // &not:nth-child(2) {
+      //   display: flex;
+      //   flex-direction: column;
+      //   flex-wrap: wrap;
+      // }
+    }
   }
 
   &__item-1 {
@@ -103,9 +200,23 @@ body {
 
     z-index: 4;
 
+    @media only screen and (max-width: 800px) {
+      grid-row: 2 / 4;
+      margin-top: 10px;
+      margin-right: 0px;
+    }
+
     @media only screen and (max-width: 600px) {
       grid-row: 2 / 4;
       margin-top: 10px;
+      margin-right: 0px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-column: 1 / 5;
+      grid-row: 4 / 5;
+      margin-top: 0px;
+      margin-right: 0px;
     }
   }
 
@@ -115,8 +226,17 @@ body {
 
     z-index: 4;
 
+    @media only screen and (max-width: 800px) {
+      grid-row: 4 / 6;
+    }
+
     @media only screen and (max-width: 600px) {
       grid-row: 4 / 6;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-column: 5 / 9;
+      grid-row: 4 / 5;
     }
   }
 
@@ -127,8 +247,20 @@ body {
 
     z-index: 4;
 
+    @media only screen and (max-width: 800px) {
+      grid-row: 4 / 6;
+      margin-right: 0px;
+    }
+
     @media only screen and (max-width: 600px) {
       grid-row: 4 / 6;
+      margin-right: 0px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-column: 1 / 5;
+      grid-row: 5 / 6;
+      margin-right: 0px;
     }
   }
 
@@ -139,8 +271,24 @@ body {
 
     z-index: 4;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
+      grid-column: 1 / 3;
       grid-row: 6 / 8;
+      margin-left: 0px;
+      margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-column: 1 / 3;
+      grid-row: 6 / 8;
+      margin-left: 0px;
+      margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-column: 5 / 9;
+      grid-row: 5 / 6;
+      margin-left: 0px;
       margin-bottom: 0px;
     }
   }
@@ -153,8 +301,24 @@ body {
 
     z-index: 4;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
+      grid-column: 5 / 9;
       grid-row: 6 / 8;
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-column: 5 / 9;
+      grid-row: 6 / 8;
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-column: 1 / 5;
+      grid-row: 6 / 8;
+      margin-right: 0px;
       margin-bottom: 0px;
     }
   }
@@ -166,8 +330,24 @@ body {
     margin-bottom: 10px;
     z-index: 4;
 
+    @media only screen and (max-width: 800px) {
+      grid-column: 1 / 5;
+      grid-row: 5 / 6;
+      margin-left: 0px;
+      margin-bottom: 0px;
+    }
+
     @media only screen and (max-width: 600px) {
-      grid-row: 6 / 8;
+      grid-column: 1 / 5;
+      grid-row: 5 / 6;
+      margin-left: 0px;
+      margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-column: 5 / 9;
+      grid-row: 6 / 7;
+      margin-left: 0px;
       margin-bottom: 0px;
     }
   }
@@ -178,8 +358,19 @@ body {
     margin-bottom: 10px;
     z-index: 4;
 
+    @media only screen and (max-width: 800px) {
+      grid-row: 6 / 8;
+      margin-bottom: 0px;
+    }
+
     @media only screen and (max-width: 600px) {
       grid-row: 6 / 8;
+      margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-column: 5 / 9;
+      grid-row: 7 / 8;
       margin-bottom: 0px;
     }
   }
@@ -190,7 +381,19 @@ body {
     color: #ffffff;
     display: block;
 
+    @media only screen and (max-width: 1000px) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 2.5rem;
+    }
+
     @media only screen and (max-width: 600px) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 400px) {
       font-size: 2.5rem;
     }
   }
@@ -202,19 +405,41 @@ body {
   font-weight: 600;
   padding-left: 5px;
 
+  @media only screen and (max-width: 400px) {
+    font-size: 1.75rem;
+    padding-left: 3px;
+  }
+
   &2 {
     display: inline-block;
     font-size: 2.5rem;
     font-weight: 600;
     padding-left: 5px;
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1.75rem;
+      padding-right: 3px;
+    }
   }
 }
 
 #total {
   font-size: 5.5rem;
 
+  @media only screen and (max-width: 1000px) {
+    font-size: 4.5rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 4.5rem;
+  }
+
   @media only screen and (max-width: 600px) {
     font-size: 4.5rem;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 2.5rem;
   }
 }
 
@@ -225,19 +450,44 @@ body {
   position: absolute;
   top: 350px;
   left: 325px;
-  right: 325px;
 
   animation: typing 2s steps(34), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
 
+  @media only screen and (max-width: 1000px) {
+    font-size: 2rem;
+    position: absolute;
+    top: 350px;
+    left: 312.5px;
+    animation: none;
+    border: none;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2rem;
+    position: absolute;
+    top: 350px;
+    left: 212.5px;
+    animation: none;
+    border: none;
+  }
+
   @media only screen and (max-width: 600px) {
     font-size: 2rem;
     position: absolute;
     top: 350px;
-    left: 162.5px;
-    right: 162.5px;
+    left: 142.5px;
+    animation: none;
+    border: none;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 350px;
+    left: 65px;
     animation: none;
     border: none;
   }
@@ -253,6 +503,18 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes typing {
@@ -276,11 +538,30 @@ body {
     &-1 {
       grid-column: 1 / 5;
       grid-row: 2 / 3;
+
+      @media only screen and (max-width: 400px) {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
     }
 
     &-2 {
       grid-column: 1 / 5;
       grid-row: 3 / 4;
+
+      align-items: center;
+      @media only screen and (max-width: 400px) {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
     }
   }
 
@@ -291,9 +572,24 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 
+    @media only screen and (max-width: 1000px) {
+      height: 75px;
+      width: 100px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      height: 75px;
+      width: 100px;
+    }
+
     @media only screen and (max-width: 600px) {
       height: 75px;
       width: 100px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      height: 50px;
+      width: 75px;
     }
   }
 
@@ -306,5 +602,10 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     padding-left: 10px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    font-size: 3rem;
+    padding-left: 0px;
   }
 }

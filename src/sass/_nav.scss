@@ -14,6 +14,22 @@
     text-decoration: none;
     color: #a194db;
 
+    @media only screen and (max-width: 1000px) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.75rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
+
     &:hover {
       color: #ffffff;
       border-bottom: 3px solid #ffffff;
@@ -23,6 +39,22 @@
   &__link-3 {
     text-decoration: none;
     color: #a194db;
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.75rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
 
     &:hover {
       color: #ffffff;
@@ -34,6 +66,22 @@
     text-decoration: none;
     color: #a194db;
 
+    @media only screen and (max-width: 1000px) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.75rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1rem;
+    }
+
     &:hover {
       color: #ffffff;
       border-bottom: 3px solid #ffffff;
@@ -44,6 +92,22 @@
 #home {
   text-decoration: none;
   color: #a194db;
+
+  @media only screen and (max-width: 1000px) {
+    font-size: 1.25rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    font-size: 1.25rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.75rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
 
   &:hover {
     color: #ffffff;
@@ -62,22 +126,49 @@
   padding-left: 10px;
   transition: all 0.35s ease-in-out;
 
+  @media only screen and (max-width: 1000px) {
+    height: 2.25rem;
+    font-size: 1.25rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    height: 2.25rem;
+    font-size: 1.25rem;
+  }
+
   @media only screen and (max-width: 600px) {
     height: 2.25rem;
     font-size: 1.25rem;
   }
 
+  @media only screen and (max-width: 400px) {
+    height: 1.75rem;
+    font-size: 1rem;
+  }
+
   &::placeholder {
     color: #dfdbdb;
 
+    @media only screen and (max-width: 1000px) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.25rem;
+    }
+
     @media only screen and (max-width: 600px) {
       font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 400px) {
+      font-size: 1rem;
     }
   }
 
   &:focus {
     outline-style: none;
-    transform: translateY(-6px);
+    transform: translateY(-2px);
   }
 }
 
