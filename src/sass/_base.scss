@@ -169,6 +169,7 @@ body {
       grid-row: 2 / 5;
       margin-top: 10px;
       margin-left: 0px;
+      overflow: hidden;
     }
 
     @media only screen and (max-width: 600px) {
@@ -176,6 +177,7 @@ body {
       grid-row: 2 / 5;
       margin-top: 10px;
       margin-left: 0px;
+      overflow: hidden;
     }
 
     @media only screen and (max-width: 400px) {
